@@ -4,7 +4,7 @@
 
 module.exports = [
     {
-        'cron':'*/5 * * * *', //cron tab time run every * * * * * * time
+        'cron':'*/5 * * * *', //cron time run every * * * * * * time
         'file':'dummy_process' //the name of the file that will be executed
     },{
         'cron':'*/5 * * * *',

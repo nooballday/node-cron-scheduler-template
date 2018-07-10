@@ -2,7 +2,7 @@ const model = require('../model/dummy_process_model')
 
 const logError = require('../helper/logger').errorlog
 
-module.exports = () => {
+module.exports = (req, res) => {
 
     /**
      * Add database request here

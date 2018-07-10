@@ -62,7 +62,7 @@ Jobs.forEach(job => {
  * run process based on file
  */
 app.get('/run/:process', (req, res) => {
-    require(`./processes/${req.params.process}`)()
+    require(`./processes/${req.params.process}`)(req, res)
     res.send({
         status: true
     })
