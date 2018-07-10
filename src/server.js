@@ -84,7 +84,7 @@ app.post('/queue', (req, res) => {
         payload
     }).save((err) => {
         if (err) {
-            errLog.error({ 'time': new Date(), 'err': err, 'filename': __filename.split(/[\\/]/).pop() })
+            errLog.error({ 'time': new Date(), 'err': err, 'filename': require('path').basename(__filename) })
             // raven.captureException(err) // TODO: activate it later in production
         }
     });

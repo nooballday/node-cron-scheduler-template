@@ -1,4 +1,6 @@
 
+This template is created to jump start a development for cron and or queue/worker in Node.Js
+
 ## How to use this template
 
  - run git clone https://github.com/nooballday/node-cron-scheduler-template.git
@@ -8,6 +10,7 @@
 ## Documentation
 
 **Create New Schedule**
+
 This function is to create a new scheduler that run according to given time, this is how you set up  a new schedule
 
 Go to ``jobs.js`` and edit the JSON export to suit your need

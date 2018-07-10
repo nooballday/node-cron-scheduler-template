@@ -22,7 +22,7 @@ module.exports = (req, res) => {
 
     })().catch(e => setImmediate(() => {
         //define your own logERrorMessage
-        logError.error({ 'message': e.message, 'process': __filename.split(/[\\/]/).pop() })
+        logError.error({ 'message': e.message, 'process': require('path').basename(__filename) })
     }))
 
 }
