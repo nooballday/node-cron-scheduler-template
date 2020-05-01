@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Achmad Naufal",
   "license": "ISC",
@@ -28,9 +30,11 @@
     "raven": "^2.6.3",
     "uuid": "^3.2.1",
     "winston": "^3.0.0-rc3",
-    "winston-daily-rotate-file": "^3.0.1"
+    "winston-daily-rotate-file": "^3.0.1",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "nodemon": "^1.17.1"
-  }
+  },
+  "snyk": true
 }
