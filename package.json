@@ -27,7 +27,7 @@
     "pg": "^7.4.1",
     "raven": "^2.6.3",
     "uuid": "^3.2.1",
-    "winston": "^3.0.0-rc3",
+    "winston": "^3.0.0",
     "winston-daily-rotate-file": "^3.0.1"
   },
   "devDependencies": {
